@@ -1,0 +1,7 @@
+node_modules
+yarn.lock
+yarn-error.log
+build
+.DS_Store
+coverage.data
+coverage

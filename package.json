@@ -1,0 +1,30 @@
+{
+  "name": "generator-tde",
+  "version": "4.4.0",
+  "description": "Generate components for React and Node",
+  "main": "index.js",
+  "author": "The Dev Environment",
+  "license": "ISC",
+  "dependencies": {
+    "decamelize": "^3.2.0",
+    "uppercamelcase": "^3.0.0",
+    "yeoman-generator": "^4.0.1"
+  },
+  "peerDependencies": {
+    "react": "^16.8.6",
+    "styled-components": "^4.3.1"
+  },
+  "keywords": [
+    "yeoman-generator",
+    "functional",
+    "component",
+    "react",
+    "javascript",
+    "builder",
+    "scaffold",
+    "quickgen"
+  ],
+  "files": [
+    "generators"
+  ]
+}
