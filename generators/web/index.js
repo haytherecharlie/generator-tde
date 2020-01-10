@@ -16,7 +16,6 @@ module.exports = class extends Generator {
       this.destinationRoot(`./${name}`)
       this.fs.copyTpl(this.templatePath(`index.js`), this.destinationPath(`index.js`), { name })
       this.fs.copyTpl(this.templatePath(`index.component.jsx`), this.destinationPath(`${name}.component.jsx`), { name })
-      this.fs.copyTpl(this.templatePath(`index.container.js`), this.destinationPath(`${name}.container.js`), { name })
       this.fs.copyTpl(this.templatePath("index.style.js"), this.destinationPath(`${name}.style.js`), { name })
     })
   }

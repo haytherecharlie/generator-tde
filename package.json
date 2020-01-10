@@ -1,6 +1,6 @@
 {
   "name": "generator-tde",
-  "version": "4.4.0",
+  "version": "5.0.1",
   "description": "Generate components for React and Node",
   "main": "index.js",
   "author": "The Dev Environment",

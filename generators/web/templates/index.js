@@ -1,1 +1,1 @@
-export { default } from "./<%=name%>.container";
+export { default } from "./<%=name%>.component";

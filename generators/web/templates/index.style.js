@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const <%=name%> = styled('div')({
+export const Wrapper = styled('div')({
   flex: 1,
   display: `flex`,
   flexDirection: `column`,
