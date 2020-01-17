@@ -3,9 +3,9 @@ import * as S from './<%=name%>.style'
 
 const <%=name%> = () => {
   return (
-    <S.<%=name%>>
+    <S.Wrapper>
       <S.Title><%=name%></S.Title>
-    </S.<%=name%>>
+    </S.Wrapper>
   )
 }
 

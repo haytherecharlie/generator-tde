@@ -12,11 +12,11 @@ module.exports = class extends Generator {
         name: "name",
         message: "Name of your component: "
       },
-    ]).then(({name}) => {
+    ]).then(({ name }) => {
       this.destinationRoot(`./${name}`)
       this.fs.copyTpl(this.templatePath(`index.js`), this.destinationPath(`index.js`), { name })
       this.fs.copyTpl(this.templatePath(`index.component.jsx`), this.destinationPath(`${name}.component.jsx`), { name })
-      this.fs.copyTpl(this.templatePath("index.style.js"), this.destinationPath(`${name}.style.js`), { name })
+      this.fs.copyTpl(this.templatePath(`index.style.js`), this.destinationPath(`${name}.style.js`), { name })
     })
   }
 }

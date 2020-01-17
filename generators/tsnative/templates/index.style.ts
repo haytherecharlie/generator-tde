@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { View, Text } from 'react-native'
 
-export const <%=name%> = styled(View)({
+export const Wrapper = styled(View)({
   flex: 1,
   display: 'flex',
   alignItems: 'center',

@@ -1,3 +1,1 @@
-import <%=name%> from './<%=name%>.container'
-
-export default <%=name%>
+export { default } from "./<%=name%>.component"

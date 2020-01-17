@@ -12,15 +12,11 @@ module.exports = class extends Generator {
         name: "name",
         message: "Name of your component: "
       },
-    ]).then(answers => {
-      const values = {
-        name: answers.name,
-      }
-      this.destinationRoot(`./${values.name}`)
-      this.fs.copyTpl(this.templatePath(`index.ts`), this.destinationPath(`index.ts`), { ...values })
-      this.fs.copyTpl(this.templatePath(`index.container.ts`), this.destinationPath(`${values.name}.container.ts`), { ...values })
-      this.fs.copyTpl(this.templatePath(`index.component.tsx`), this.destinationPath(`${values.name}.component.tsx`), { ...values })
-      this.fs.copyTpl(this.templatePath(`index.style.ts`), this.destinationPath(`${values.name}.style.ts`), { ...values })
+    ]).then(({ name }) => {
+      this.destinationRoot(`./${name}`)
+      this.fs.copyTpl(this.templatePath(`index.ts`), this.destinationPath(`index.ts`), { name })
+      this.fs.copyTpl(this.templatePath(`index.component.tsx`), this.destinationPath(`${name}.component.tsx`), { name })
+      this.fs.copyTpl(this.templatePath(`index.style.ts`), this.destinationPath(`${name}.style.ts`), { name })
     })
   }
 }
